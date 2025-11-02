@@ -11,7 +11,7 @@ A simulação utiliza o eficiente **Método Split-Step Fourier** para evoluir a 
 O script gera uma animação que mostra o pacote de onda Gaussiano se aproximando, colidindo e se dividindo ao interagir com a barreira de potencial.
 
 
-`![Animação do Tunelamento](./tunelamento_anim.gif)`
+`![Animação do Tunelamento](./imagens/tunelamento_anim.gif)`
 
 ---
 
