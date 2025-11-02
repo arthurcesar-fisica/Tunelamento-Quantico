@@ -26,7 +26,7 @@ A solução formal seria $\psi(t+\Delta t) = e^{-i\hat{H}\Delta t / \hbar} \psi(
 
 ---
 
-### 💻 A Técnica: O Método Split-Step Fourier
+### O Método Split-Step Fourier
 
 Aqui entra o "pulo do gato" computacional. Usamos a aproximação de Trotter (ou Baker-Campbell-Hausdorff) para "dividir" (split) a evolução em pequenos passos:
 
@@ -48,7 +48,7 @@ O **Método Fourier** é a ponte entre esses dois espaços. A **Transformada Rá
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 O script foi escrito em Python e depende de algumas bibliotecas científicas padrão.
 
