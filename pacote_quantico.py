@@ -121,3 +121,39 @@ def update(frame):
 
 anim = FuncAnimation(fig, update, frames = len (psi_resultados), blit = True, interval = 20)
 plt.show()
+'''
+#gif da animação
+# ... [todo o seu código anterior continua igual] ...
+
+#------ Animação ------
+fig, ax = plt.subplots(figsize = (10, 6))
+
+linha_prob, = ax.plot([], [], 'b-', lw = 2)
+ax.plot(x, V, 'r--', label = 'Potencial V(x)')
+ax.set_xlim(-L/2, L/2)
+ax.set_ylim(0, np.max(np.abs(psi)**2)* 1.1)
+ax.set_xlabel('Posição(x)')
+ax.set_ylabel('Probabilidade')
+ax.legend()
+ax.grid(True)
+
+def update(frame):
+ psi_t = psi_resultados[frame] 
+ prob_densidade_t = np.abs(psi_t)**2
+ linha_prob.set_data(x, prob_densidade_t)
+ return linha_prob,
+
+anim = FuncAnimation(fig, update, frames = len (psi_resultados), blit = True, interval = 20)
+
+# --- TROQUE ISSO ---
+# plt.show() 
+# --- POR ISSO ---
+
+# Avisa que o processo começou (porque demora!)
+print("salvando gif")
+
+# Define o nome do arquivo, o 'writer' que acabamos de instalar, e o FPS
+# O seu interval=20 daria 50 FPS (1000/20), mas 30 já fica ótimo e o arquivo fica menor.
+anim.save('tunelamento_anim.gif', writer='pillow', fps=30)
+
+print("concluido")'''
