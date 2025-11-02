@@ -17,7 +17,7 @@ O script gera uma animação que mostra o pacote de onda Gaussiano se aproximand
 
 ###  Contexto Físico: A Equação de Schrödinger
 
-O nosso objetivo é resolver a TDSE 1D:
+O nosso objetivo é resolver a Equação de Schrödinger dependente do tempo 1D:
 $$i\hbar \frac{\partial \psi(x,t)}{\partial t} = \hat{H} \psi(x,t) = \left( \hat{T} + \hat{V} \right) \psi(x,t)$$
 
 Onde $\hat{T} = -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}$ é o operador de energia cinética e $\hat{V} = V(x)$ é o operador de energia potencial.
