@@ -28,7 +28,7 @@ A solução formal seria $\psi(t+\Delta t) = e^{-i\hat{H}\Delta t / \hbar} \psi(
 
 ### O Método Split-Step Fourier
 
-Aqui entra o "pulo do gato" computacional. Usamos a aproximação de Trotter (ou Baker-Campbell-Hausdorff) para "dividir" (split) a evolução em pequenos passos:
+Usamos a aproximação de Trotter (ou Baker-Campbell-Hausdorff) para "dividir" (split) a evolução em pequenos passos:
 
 $$\psi(t+\Delta t) \approx e^{-i\hat{V} \Delta t / 2\hbar} \cdot e^{-i\hat{T} \Delta t / \hbar} \cdot e^{-i\hat{V} \Delta t / 2\hbar} \psi(t)$$
 
